@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="theme-color" content="#F6F5FB">
+<meta name="theme-color" content="#100E1A">
 <meta name="description" content="Church Stall 2026 - Crochet Items Billing App">
 <title>🧶 Crochet Stall — Church 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,8 +20,8 @@
 html { font-size: 16px; -webkit-tap-highlight-color: transparent; }
 body {
   font-family: 'Inter', sans-serif;
-  background: #F6F5FB;
-  color: #161326;
+  background: #100E1A;
+  color: #F0ECFF;
   height: 100dvh;
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
@@ -31,32 +31,36 @@ body {
    CSS VARIABLES
    ======================================================== */
 :root {
-  --v: #7C3AED;        /* vibrant violet */
-  --vl: #6D28D9;       /* deeper violet for crisp text/icons on light */
-  --vd: #5B21B6;
-  --vbg: rgba(124,58,237,0.12);
-  --a: #D97706;        /* rich amber */
-  --al: #F59E0B;
-  --abg: rgba(217,119,6,0.12);
-  --e: #059669;        /* emerald */
-  --ebg: rgba(5,150,105,0.12);
-  --b: #2563EB;
-  --bbg: rgba(37,99,235,0.12);
-  --r: #E11D48;
-  --rbg: rgba(225,29,72,0.12);
-  --g: #16A34A;
-  --gbg: rgba(22,163,74,0.12);
-  --bg:  #F6F5FB;
-  --s1:  #FFFFFF;      /* crisp white cards */
-  --s2:  #EFE有机;      /* soft tint */
-  --s2:  #EFEcf8;      /* soft lavender surface */
-  --s3:  #E4E0F5;
-  --bd:  rgba(22,19,38,0.12);
-  --tx:  #161326;      /* high-contrast dark text */
-  --tm:  #4B4466;      /* readable secondary text */
-  --td:  #6E658F;      /* muted text still legible in bright light */
+  --v: #8B5CF6;        /* violet */
+  --vl: #A78BFA;       /* violet light */
+  --vd: #6D28D9;       /* violet dark */
+  --vbg: rgba(139,92,246,0.12);
+  --a: #F59E0B;        /* amber */
+  --al: #FCD34D;       /* amber light */
+  --abg: rgba(245,158,11,0.12);
+  --e: #10B981;        /* emerald */
+  --ebg: rgba(16,185,129,0.12);
+  --b: #3B82F6;        /* blue */
+  --bbg: rgba(59,130,246,0.12);
+  --r: #F43F5E;        /* rose */
+  --rbg: rgba(244,63,94,0.12);
+  --g: #34A853;        /* gpay green */
+  --gbg: rgba(52,168,83,0.12);
+  --bg:  #100E1A;
+  --s1:  #1A1730;      /* surface 1 */
+  --s2:  #221F38;      /* surface 2 */
+  --s3:  #2C2847;      /* surface 3 */
+  --bd:  rgba(255,255,255,0.08); /* border */
+  --tx:  #F0ECFF;      /* text */
+  --tm:  #9B8EC4;      /* text muted */
+  --td:  #5E5478;      /* text dim */
+  --rr:  16px;         /* border radius */
+  --rs:  10px;         /* border radius small */
+  --hh:  60px;         /* header height */
+  --nh:  70px;         /* nav height */
+  --tr:  0.22s cubic-bezier(0.4,0,0.2,1);
 }
-   
+
 /* ========================================================
    SCROLLBAR
    ======================================================== */
@@ -141,7 +145,7 @@ body {
   will-change: opacity, transform;
 }
 .view.active {
-  opacity: 100;
+  opacity: 1;
   transform: translateY(0);
   pointer-events: all;
 }
@@ -151,7 +155,7 @@ body {
    ======================================================== */
 #bottom-nav {
   height: var(--nh);
-  background: rgba(255,255,255,0.96);
+  background: rgba(16,14,26,0.96);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   border-top: 1px solid var(--bd);
